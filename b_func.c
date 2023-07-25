@@ -14,7 +14,7 @@
 
 char *_memcpy(char *dst, char *src, unsigned int n, unsigned int bufferlen)
 {
-	 int i;
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
 		dst[i + bufferlen] = src[i];
