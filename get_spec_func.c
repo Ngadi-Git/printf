@@ -15,7 +15,7 @@ char *(*get_spec_func(char s))(va_list)
 		{"s", string_find},
 		{"%", percent_find},
 		{"d", int_find},
-		{"i", int_find}
+		{"i", int_find},
 		{NULL, NULL}
 	};
 

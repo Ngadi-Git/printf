@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stddef.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _memcpy - copies memory area
