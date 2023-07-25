@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stddef.h>
 
+
 /**
- * get_spec_func - check specifier type and return function
+ * gs_fun - check specifier type and return function
  *@s: type to check
  *Return: pointer to function to use
  */

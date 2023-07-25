@@ -33,7 +33,7 @@ char *char_to_string(char c)
 }
 
 /**
- * nothing_found - no matches found but '%' passed
+ * _empty - no matches found but '%' passed
  * @c: character unmatched to return
  * Return: string with percent and character.
  */
