@@ -22,7 +22,7 @@ char *_memcpy(char *dst, char *src, unsigned int n, unsigned int bufferlen)
 }
 
 /**
- * alloc_buffer - allocates characters to buffer, with overflows
+ * a_buff - assigns characters to buffer, with overflows
  * @hld: string to allocate into buffer
  * @hlen: hold length
  * @buffer: buffer char array
