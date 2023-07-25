@@ -4,4 +4,4 @@
 ## 
 ## Authors
 * Lennon N Paul
-* Sello Sello
+* Sello Magagula
