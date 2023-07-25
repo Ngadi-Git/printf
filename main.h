@@ -10,6 +10,12 @@
  * @f: The function associated
  */
 
+typedef struct spec_types
+{
+	char *spec;
+	char *(*f)();
+} s_types;
+
 char *int_find(va_list npoint);
 char *unsigned_find(va_list unsign);
 int _strlen(char *s);
