@@ -18,11 +18,11 @@ int _strlen(char *s)
 }
 
 /**
- * chartos - converts a character to a string
+ * char_to_string - converts a character to a string
  * @c: character to convert
  * Return: pointer to string
  */
-char *chartos(char c)
+char *char_to_string(char c)
 {
 	char str[1];
 	char *p;
@@ -37,7 +37,7 @@ char *chartos(char c)
  * @c: character unmatched to return
  * Return: string with percent and character.
  */
-char *nothing_found(char c)
+char *_empty(char c)
 {
 	char str[3];
 	char *p;

@@ -5,17 +5,17 @@
 
 /**
  * _printf - function that prints output
- * @format: is a charachter string with 0 to 3 directives
+ * @format: is a character str directives
  * Return: the number of charachters to be printed
  */
 
 int _printf(const char *format, ...)
 {
 	va_list valist;
-	int i, buffend = 0;
+	int i, bffnd = 0;
 	double ttlBuffer = 0;
 	double *ttl;
-	char *holder;
+	char *_hlder;
 	char buffer[BUFSIZE];
 	char *(*spec_func)(va_list) = NULL;
 
@@ -30,18 +30,18 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			spec_func = get_spec_func(format[i]);
-			holder = (spec_func) ? spec_func(valist) : nothing_found(format[i]);
-			if (holder)
-				buffend = alloc_buffer(holder, _strlen(holder), buffer, buffend, ttl);
+			s_funct = gs_fun(format[i]);
+			_hlder = (s_funct) ? s_funct(valist) : _empty(format[i]);
+			if (_hlder)
+				bffnd = a_buff(_hlder, _strlen(_hlder), buffer, bffnd, ttl);
 		}
 		else
 		{
-			holder = chartos(format[i]);
-			buffend = alloc_buffer(holder, 1, buffer, buffend, ttl);
+			_hlder = char_to_string(format[i]);
+			bffnd = a_buff(_hlder, 1, buffer, bffnd, ttl);
 		}
 	}
-	_puts(buffer, buffend);
+	_puts(buffer, bffnd);
 	va_end(valist);
-	return (ttlBuffer + buffend);
+	return (ttlBuffer + bffnd);
 }

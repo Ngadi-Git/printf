@@ -5,20 +5,20 @@
 
 /**
  * _memcpy - copies memory area
- * @dest: destination memory area
+ * @dst: destination memory area
  * @src: source memory area
  * @n: number of bytes to copy
  * @bufferlen: current number of bytes taken by buffer
  * Return: pointer to destination memory area
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n, unsigned int bufferlen)
+char *_memcpy(char *dst, char *src, unsigned int n, unsigned int bufferlen)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
-		dest[i + bufferlen] = src[i];
-	return (dest);
+		dst[i + bufferlen] = src[i];
+	return (dst);
 }
 
 /**
@@ -31,7 +31,7 @@ char *_memcpy(char *dest, char *src, unsigned int n, unsigned int bufferlen)
  * Return: buffer length
  */
 
-int alloc_buffer(char *hld, int hlen, char *buffer, int size, double *ttl)
+int a_buff(char *hld, int hlen, char *buffer, int size, double *ttl)
 {
 	int sizecpy = 0;
 
