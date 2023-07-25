@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	double *ttl;
 	char *_hlder;
 	char buffer[BUFSIZE];
-	char *(*spec_func)(va_list) = NULL;
+	char *(*s_funct)(va_list) = NULL;
 
 	if (!format)
 		return (-1);
