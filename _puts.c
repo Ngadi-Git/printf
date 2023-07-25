@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stddef.h>
 #include <stdlib.h>
-#include "main.c"
+#include "main.h"
 
 /**
  * _puts - print a buffer
