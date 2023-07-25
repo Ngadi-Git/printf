@@ -11,7 +11,7 @@
 char *(*gs_fun(char s))(va_list)
 {
 	int i;
-	 spec_types[] = {
+	s_types spec_types[] = {
 		{"c", char_find},
 		{"s", string_find},
 		{"%", percent_find},
