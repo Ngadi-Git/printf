@@ -11,5 +11,5 @@
 
 void _puts(char *buffer, int size)
 {
-        write(1, buffer, size);
+	write(1, buffer, size);
 }
