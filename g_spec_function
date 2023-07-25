@@ -7,7 +7,7 @@
  *Return: pointer to function to use
  */
 
-char *(*gs_fun(char s))(va_list)
+
 {
 	int i;
 	s_types spec_types[] = {
